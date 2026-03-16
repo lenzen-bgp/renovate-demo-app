@@ -11,8 +11,7 @@
     },
     {
       "matchPackageNames": ["axios"],
-      "matchUpdateTypes": ["patch"],
-      "enabled": true
+      "enabled": false
     }
   ]
 }
