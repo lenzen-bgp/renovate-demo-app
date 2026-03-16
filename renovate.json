@@ -6,8 +6,16 @@
   ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],  // <-- Matcher
-      "groupName": "dev dependencies"        // <-- Aktion
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch"],
+      "groupName": "dev dependencies (patch)",
+      "automerge": true,
+      "automergeType": "pr"
+    },
+    {
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["mino"],
+      "enabled": false
     },
     {
       "matchPackageNames": ["axios"],
