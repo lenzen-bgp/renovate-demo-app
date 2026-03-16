@@ -7,15 +7,17 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch"],
-      "groupName": "dev dependencies (patch)",
+      "matchUpdateTypes": ["*"], // kann man auch weglassen?
+      "groupName": "dev dependencies (all)",
       "automerge": true,
       "automergeType": "pr"
     },
     {
-      "matchPackageNames": ["axios"],
-      "matchUpdateTypes": ["minor"],
-      "enabled": false
+      "matchDepTypes": ["*"], // kann man auch weglassen?
+      "matchUpdateTypes": ["patch"],
+      "groupName": "dependencies (patch)",
+      "automerge": true,
+      "automergeType": "pr"
     },
     {
       "matchPackageNames": ["axios"],
