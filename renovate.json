@@ -14,7 +14,7 @@
     },
     {
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["mino"],
+      "matchUpdateTypes": ["minor"],
       "enabled": false
     },
     {
