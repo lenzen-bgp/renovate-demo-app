@@ -8,6 +8,10 @@
     {
       "matchDepTypes": ["devDependencies"],  // <-- Matcher
       "groupName": "dev dependencies"        // <-- Aktion
+    },
+    {
+      "matchPackageNames": ["axios"],
+      "enabled": false
     }
   ]
 }
