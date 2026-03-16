@@ -4,20 +4,24 @@
     "config:recommended",
     "mergeConfidence:all-badges"
   ],
+  "schedule": ["before 7pm on monday through thuesday"],
+  "timezone": "Europe/Berlin",
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["*"], // kann man auch weglassen?
       "groupName": "dev dependencies (all)",
       "automerge": true,
       "automergeType": "pr"
     },
     {
-      "matchDepTypes": ["*"], // kann man auch weglassen?
-      "matchUpdateTypes": ["patch"],
-      "groupName": "dependencies (patch)",
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "dependencies (patch, minor)",
       "automerge": true,
       "automergeType": "pr"
+    },
+    {
+      "matchPackageNames": ["axios"],
+      "enabled": false
     },
     {
       "matchPackageNames": ["axios"],
