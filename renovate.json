@@ -13,7 +13,7 @@
       "automergeType": "pr"
     },
     {
-      "matchPackageNames": ["*"],
+      "matchPackageNames": ["axios"],
       "matchUpdateTypes": ["minor"],
       "enabled": false
     },
